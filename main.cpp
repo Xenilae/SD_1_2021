@@ -70,7 +70,7 @@ int main()
     if (e == 1)
         cout <<"Graful nu are circuite"<< endl;
     else
-        cout <<"Graful are circuite"<< endl;
+           cout <<"Graful are circuite"<< endl;
     for (i = 1; i <= n; i++)
     {
         c[i].p = 0;
@@ -93,5 +93,9 @@ int main()
                     c[j] = aux;
                 }
         cout <<"Drumul hamiltonian este :";
+        for(i=1; i<=n; i++)
+            cout<<c[i].v<<" ";
     }
+    else cout<<"Graful nu are drum hamiltonian";
+    getch();
 }
